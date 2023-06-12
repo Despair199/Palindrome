@@ -1,0 +1,17 @@
+FUNCTION Palindrome
+VAR
+    tab : ARRAY_OF STRING[];
+    j,k : CHAR
+    Result : STRING
+BEGIN
+    FOR j FROM 0 TO tab.length-1 STEP 1 DO
+        FOR k FROM tab.length-1 TO 0 STEP 1  DO
+            IF (tab[i]==tab[j]) THEN
+                Result :="Palindrome"
+            ELSE
+                result :="Not palindrome"
+            END_IF
+        END_FOR
+    END_FOR
+    RETURN result
+END
